@@ -26,7 +26,6 @@
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,900%7COpen+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
 </head>
 
 <body>
@@ -36,63 +35,275 @@
 
   <!-- Add your site or application content here -->
 
-<header>
-  
-</header>
+  <div class="container-fluid top-nav py-2">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img class="p-2" src="images/logo-horizontal.png" alt="">
+    </div>
+        <div class="col-md-6 text-right">
+          <a href="#" class="btn btn-lg btn-outline-primary">Call Us (555) 5555-555</a>
+        </div>
+      </div>
+    </div>
 
-<main>
+    <div class="header d-flex justify-content-end align-items-center">
+      <img src="images/logo5.png" class="img-fluid mr-5" alt="">
+</div>
 
-</main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="inner-center">
+              <h1>Super cool Alexandria invisalign provider<small class="d-block">with a state of the art iTero Scanner</small></h1>
+              <p>Green Dental of Alexandria is a certified Invisalign provider and our dentist, Dr. Hye Y. Park, is highly qualified to
+                provide this innovative orthodontic service. Our dentist and staff are deeply committed to your long-term oral health and to helping you achieve a naturally beautiful and fully functional smile, for life. Using the best and safest
+                materials the industry has to offer, the most advanced dental technology and eco-friendly systems, we deliver top quality orthodontic care to professionals and families.</p>
+              <h3>What is Invisalign?</h3>
+              <ul class="leaf">
+                <li>Invisible way to straighten your teeth without braces.</li>
+                <li>Series of clear, removable, custom-made Aligners.</li>
+                <li>Uses no metal wires or brackets.</li>
+                <li>Custom-made for comfort.</li>
+              </ul>
+              <h3>How does Invisalign work?</h3>
+              <ul class="leaf">
+                <li>Wear each set of Aligners for about two weeks.</li>
+                <li>Remove only to eat, drink, brush and floss.</li>
+                <li>Your teeth will move gradually each week.</li>
+                <li>Visit us every 8-10 weeks.</li>
+                <li>Total treatment time averages 6-15 months.</li>
+                <li>Average number of Aligners is between 18 and 30.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="inner-center">
+              <div class="form form-header">
+                <h2>Schedule Your Free Consultation</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Full Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Phone Number</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Availability</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <button type="button" name="button" class="btn btn-primary">Schedule Now</button>
+                </form>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
 
-<footer>
+        <div class="container-fluid text-center">
+          <img class="p-2" src="images/logo1.png" alt="">
+          <img class="p-2" src="images/logo2.png" alt="">
+          <img class="p-2" src="images/logo3.png" alt="">
+          <img class="p-2" src="images/logo4.png" alt="">
+          <img class="p-2" src="images/logo5.png" alt="">
+          <img class="p-2" src="images/logo6.png" alt="">
+          <img class="p-2" src="images/logo7.png" alt="">
+        </div>
 
-</footer>
 
-  <script src="scripts/jquery.js?ver=1.12.4"></script>
-  <script src="scripts/jquery-migrate.min.js?ver=1.4.1"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-  </script>
-  <script src="scripts/bootstrap.bundle.min.js"></script>
-  <script src="scripts/jquery.sticky-kit.min.js"></script>
-  <script src="scripts/main.js"></script>
 
-  <script>
-    var map;
+          <div class="w-100" id="map">
 
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-          lat: 33.7915435,
-          lng: -84.3946641
-        },
-        zoom: 15,
-        disableDefaultUI: true
-      });
-      var image = 'https://tomaszbudny.github.io/flc-landing/images/marker.png';
-      var beachMarker = new google.maps.Marker({
-        position: map.center,
-        map: map,
-        icon: image
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOhJvDNZNNDkplQkKFrTgYx8l_ePLE0Mw&callback=initMap" async defer></script>
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function() {
-      ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  <script type="text/javascript">
-  (function() { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = '//api.usersnap.com/load/461402ab-48c0-4a62-9425-514ad1cea386.js';
-  var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
-  </script>
+          </div>
+          <div class="container-fluid p-2 text-center bg-primary">
+            <p class="m-0">1725 Duke St, Suite GR03 Alexandria VA 22314</p>
+          </div>
+
+<div class="pt-5 text-center">
+  <h2>About <img src="images/logo5.png" alt=""></h2>
+</div>
+
+          <div class="container-fluid p-5">
+            <div class="row p-5">
+              <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="inner-center text-center">
+                  <video poster="https://greendentalalexandria.com/wp-content/uploads/video/poster-4.jpg" controls="controls"><source src="https://greendentalalexandria.com/wp-content/uploads/video/Value_of_Treatment.mp4" type="video/mp4"><source src="https://greendentalalexandria.com/wp-content/uploads/video/Value_of_Treatment.webm" &nbsp;type="video/webm"></video>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="inner-center">
+                  <h3>Invisalign vs Traditional Braces</h3>
+      </div>
+                </div>
+              </div>
+                <div class="row p-5">
+
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                  <div class="inner-center text-center">
+                    <h3>Invisalign Using the iTero Scanner</h3>
+                    <p><img src="images/logo-itero.png" alt=""></p>
+                    <p><img src="images/itero-element-flex-slide-3.png" alt=""></p>
+                    <p>With this sophisticated handheld camera device, patients no longer have to endure the unpleasant and messy experience of getting a dental impression. Instead, the iTero scanner can comfortably create a virtual 3D image of the teeth, gums and oral structures in a matter of minutes. This painless and highly accurate model of your bite can be used to create an unrivaled fit for dental crowns, bridges, implants, night guards and Invisalign trays.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                  <div class="inner-center">
+                    <video poster="https://greendentalalexandria.com/wp-content/uploads/video/poster-1.jpg" controls="controls"><source src="https://greendentalalexandria.com/wp-content/uploads/video/15-ALTE.mp4" type="video/mp4"><source src="https://greendentalalexandria.com/wp-content/uploads/video/15-ALTE.webm" &nbsp;type="video/webm"></video>
+        </div>
+                  </div>
+                </div>
+                  <div class="row p-5">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <div class="inner-center text-center">
+                        <div class="inner-center">
+                          <img src="images/Case-11-resized.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <div class="inner-center">
+                        <h3>Before / After effect</h3>
+            </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-5 text-center">
+                <h2>About Green Dental of Alexandria</h2>
+              </div>
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="inner-center">
+                      <p>Dr. Hye Park is a cosmetic and general dentist practicing at Northern Virginia. She has superior attention to detail and a very driven focus when she attends to patients and their needs. She graduated from the University of Maryland at Baltimore County where she obtained a Bachelor of Science degree in Biochemistry and obtained her Doctor of Dental Medicine (DMD) degree from Boston University Goldman School of Dental Medicine.</p>
+                      <p>As someone who is not only passionate about education and work but believes that hands-on experience and education go hand-in-hand. Dr. Park has completed hundreds of continuing education to stay on the top of cutting edge technology and the most advanced dental techniques including cosmetic orthodontics, smile make over, lasers, implants, endodontics, oral sedation, etc.</p>
+                      <h3>Amenities</h3>
+                      <ul class="leaf">
+                        <li>Internet Station & High Speed Internet Access</li>
+                        <li>WIFI</li>
+                        <li>Complimentary Refreshment Bar</li>
+                        <li>ErgoSoothe Massage Dental Chairs</li>
+                        <li>High Definition Televisions</li>
+                        <li>Warm Blankets</li>
+                        <li>Warm Moist Towels</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="inner-center">
+                      <img src="images/Dr-Park-Photo.jpg" alt="">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <div class="container-fluid text-center py-5">
+                <h2>Testimonials</h2>
+                <blockquote class="blockquote">
+                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </div>
+
+
+                <div class="container-fluid text-center py-5">
+                  <h2>Contact Form</h2>
+                  <div class="form form-footer">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Full Name</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone Number</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Availability</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <button type="button" name="button" class="btn btn-primary">Schedule Now</button>
+                    </form>
+                  </div>
+                </div>
+
+
+                <div class="container-fluid top-nav py-2">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <img class="p-2" src="images/logo-horizontal.png" alt="">
+    </div>
+                      <div class="col-md-6 text-right">
+                        <a href="#" class="btn btn-lg btn-outline-primary">Call Us (555) 5555-555</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <script src="scripts/jquery.js?ver=1.12.4"></script>
+                  <script src="scripts/jquery-migrate.min.js?ver=1.4.1"></script>
+                  <script>
+                    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+                  </script>
+                  <script src="scripts/bootstrap.bundle.min.js"></script>
+                  <script src="scripts/jquery.sticky-kit.min.js"></script>
+                  <script src="scripts/main.js"></script>
+
+                  <script>
+                    var map;
+
+                    function initMap() {
+                      map = new google.maps.Map(document.getElementById('map'), {
+                        center: {
+                          lat: 33.7915435,
+                          lng: -84.3946641
+                        },
+                        zoom: 15,
+                        disableDefaultUI: true
+                      });
+                      var beachMarker = new google.maps.Marker({
+                        position: map.center,
+                        map: map
+                      });
+                    }
+                  </script>
+                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOhJvDNZNNDkplQkKFrTgYx8l_ePLE0Mw&callback=initMap" async defer></script>
+                  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+                  <script>
+                    window.ga = function() {
+                      ga.q.push(arguments)
+                    };
+                    ga.q = [];
+                    ga.l = +new Date;
+                    ga('create', 'UA-XXXXX-Y', 'auto');
+                    ga('send', 'pageview')
+                  </script>
+                  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
