@@ -1,4 +1,6 @@
-body { background: #FEF5ED; }
+.bg-gray { background: #FEF5ED; }
+
+body { font-family: 'Open Sans', sans-serif; }
 
 #map { height: 200px; }
 
@@ -16,11 +18,11 @@ body { background: #FEF5ED; }
 
 .header { background-image: url("../images/header.jpg"); background-size: cover; height: 16.45vw; overflow: hidden; }
 
-.form-header { position: relative; background: white; padding: 3rem; }
+.form-header { position: relative; background: #FEF5ED; padding: 3rem; }
 
-.btn-danger { color: #fff; background-color: #E14B2D; border-color: #E14B2D; }
+.btn-danger { color: #fff; background-color: #e14b2d; border-color: #e14b2d; box-shadow: 0 2px 8px rgba(225, 75, 45, 0.4); }
 
-.btn-danger:focus, .btn-danger:hover { color: #fff; background-color: #E14B2D; border-color: #E14B2D; }
+.btn-danger:focus, .btn-danger:hover { color: #fff; background-color: rgba(225, 75, 45, 0.8); border-color: rgba(225, 75, 45, 0.8); }
 
 .shadow { box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05), 0 0 35px 0 rgba(0, 0, 0, 0.05), 0 30px 100px -40px rgba(0, 0, 0, 0.15); }
 

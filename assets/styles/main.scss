@@ -3,9 +3,11 @@ $secondary: #FBAA37;
 $invisalign-light: #00ADEF;
 $invisalign-dark: #0066AB;
 $body: #FEF5ED;
-
-body {
+.bg-gray {
   background: $body;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 #map {
@@ -60,21 +62,22 @@ body {
 
 .form-header {
   position: relative;
-  background: white;
+  background: $body;
   padding: 3rem;
 }
 
 .btn-danger {
   color: #fff;
-  background-color: #E14B2D;
-  border-color: #E14B2D;
+  background-color: rgba(225, 75, 45, 1);
+  border-color: rgba(225, 75, 45, 1);
+  box-shadow: 0 2px 8px rgba(225, 75, 45, .4);
 }
 
 .btn-danger:focus,
 .btn-danger:hover {
   color: #fff;
-  background-color: #E14B2D;
-  border-color: #E14B2D;
+  background-color: rgba(225, 75, 45, .8);
+  border-color: rgba(225, 75, 45, .8);
 }
 
 .shadow {
