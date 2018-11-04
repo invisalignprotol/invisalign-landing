@@ -52,7 +52,7 @@ body {
 }
 
 .header {
-  background-image: url(../images/header.jpg);
+  background-image: url("../images/header.jpg");
   background-size: cover;
   height: 16.45vw;
   overflow: hidden;
@@ -64,14 +64,38 @@ body {
   padding: 3rem;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: $secondary;
-    border-color: $secondary;
+.btn-danger {
+  color: #fff;
+  background-color: #E14B2D;
+  border-color: #E14B2D;
 }
 
-.btn-primary:hover, .btn-primary:focus {
-    color: #fff;
-    background-color: $secondary;
-    border-color: $secondary;
+.btn-danger:focus,
+.btn-danger:hover {
+  color: #fff;
+  background-color: #E14B2D;
+  border-color: #E14B2D;
+}
+
+.shadow {
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.05), 0 0 35px 0 rgba(0,0,0,.05), 0 30px 100px -40px rgba(0,0,0,.15);
+}
+
+.inner-center {
+  max-width: 720px;
+
+  li,
+  p {
+    font-size: 1.1rem;
+  }
+
+  p,
+  ul {
+    margin: 1rem 0;
+  }
+}
+
+.logos img {
+  max-height: 100px;
+  padding: 15px;
 }

@@ -14,10 +14,20 @@ body { background: #FEF5ED; }
 
 .form { width: 400px; text-align: left; margin: 0 auto; }
 
-.header { background-image: url(../images/header.jpg); background-size: cover; height: 16.45vw; overflow: hidden; }
+.header { background-image: url("../images/header.jpg"); background-size: cover; height: 16.45vw; overflow: hidden; }
 
 .form-header { position: relative; background: white; padding: 3rem; }
 
-.btn-primary { color: #fff; background-color: #FBAA37; border-color: #FBAA37; }
+.btn-danger { color: #fff; background-color: #E14B2D; border-color: #E14B2D; }
 
-.btn-primary:hover, .btn-primary:focus { color: #fff; background-color: #FBAA37; border-color: #FBAA37; }
+.btn-danger:focus, .btn-danger:hover { color: #fff; background-color: #E14B2D; border-color: #E14B2D; }
+
+.shadow { box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05), 0 0 35px 0 rgba(0, 0, 0, 0.05), 0 30px 100px -40px rgba(0, 0, 0, 0.15); }
+
+.inner-center { max-width: 720px; }
+
+.inner-center li, .inner-center p { font-size: 1.1rem; }
+
+.inner-center p, .inner-center ul { margin: 1rem 0; }
+
+.logos img { max-height: 100px; padding: 15px; }
