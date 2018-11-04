@@ -1,0 +1,25 @@
+{
+  "name": "invisalign-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomaszBudny/invisalign-landing.git"
+  },
+  "author": "Tomasz Budny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomaszBudny/invisalign-landing/issues"
+  },
+  "homepage": "https://github.com/TomaszBudny/invisalign-landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

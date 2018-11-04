@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="pl-PL" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Find Local Company Landing</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noindex">
+
+  <meta property="og:url" content="https://tomaszbudny.github.io/flc-landing/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Find Local Company Landing" />
+
+  <meta property="og:description" content="Find Local Company Landing" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:alt" content="" />
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900%7COpen+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+<header>
+  
+</header>
+
+<main>
+
+</main>
+
+<footer>
+
+</footer>
+
+  <script src="scripts/jquery.js?ver=1.12.4"></script>
+  <script src="scripts/jquery-migrate.min.js?ver=1.4.1"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/jquery.sticky-kit.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <script>
+    var map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 33.7915435,
+          lng: -84.3946641
+        },
+        zoom: 15,
+        disableDefaultUI: true
+      });
+      var image = 'https://tomaszbudny.github.io/flc-landing/images/marker.png';
+      var beachMarker = new google.maps.Marker({
+        position: map.center,
+        map: map,
+        icon: image
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOhJvDNZNNDkplQkKFrTgYx8l_ePLE0Mw&callback=initMap" async defer></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script type="text/javascript">
+  (function() { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = '//api.usersnap.com/load/461402ab-48c0-4a62-9425-514ad1cea386.js';
+  var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+  </script>
+</body>
+
+</html>
