@@ -6,10 +6,17 @@ $body: #FEF5ED;
 .bg-gray {
   background: $body;
 }
+.border {
+  background: white;
+  padding: 10px;
+}
 body {
   font-family: 'Open Sans', sans-serif;
+  margin-top: 109px;
 }
-
+.form-control, .btn {
+  border-radius: 0;
+}
 #map {
   height: 200px;
 }
@@ -94,11 +101,17 @@ body {
 
   p,
   ul {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
   }
 }
 
 .logos img {
   max-height: 100px;
   padding: 15px;
+  filter: grayscale(100%);
+  transition: .4s;
+}
+
+.logos img:hover {
+  filter: grayscale(0%);
 }

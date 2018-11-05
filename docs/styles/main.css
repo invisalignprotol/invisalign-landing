@@ -1,6 +1,10 @@
 .bg-gray { background: #FEF5ED; }
 
-body { font-family: 'Open Sans', sans-serif; }
+.border { background: white; padding: 10px; }
+
+body { font-family: 'Open Sans', sans-serif; margin-top: 109px; }
+
+.form-control, .btn { border-radius: 0; }
 
 #map { height: 200px; }
 
@@ -30,6 +34,8 @@ body { font-family: 'Open Sans', sans-serif; }
 
 .inner-center li, .inner-center p { font-size: 1.1rem; }
 
-.inner-center p, .inner-center ul { margin: 1rem 0; }
+.inner-center p, .inner-center ul { margin-bottom: 1rem; }
 
-.logos img { max-height: 100px; padding: 15px; }
+.logos img { max-height: 100px; padding: 15px; -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: .4s; }
+
+.logos img:hover { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
