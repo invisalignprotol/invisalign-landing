@@ -21,8 +21,13 @@ body {
   height: 200px;
 }
 
-.bg-primary {
+.bg-primary, .modal-backdrop {
   background: $primary!important;
+  color: white;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
 }
 
 .bg-secondary {
@@ -114,4 +119,10 @@ body {
 
 .logos img:hover {
   filter: grayscale(0%);
+}
+
+.modal-content {
+  background: transparent;
+  color: white;
+  border: none;
 }

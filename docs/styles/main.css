@@ -8,7 +8,9 @@ body { font-family: 'Open Sans', sans-serif; margin-top: 109px; }
 
 #map { height: 200px; }
 
-.bg-primary { background: #6FB83B !important; }
+.bg-primary, .modal-backdrop { background: #6FB83B !important; color: white; }
+
+.modal-backdrop.show { opacity: 1; }
 
 .bg-secondary { background: #FBAA37 !important; }
 
@@ -39,3 +41,5 @@ body { font-family: 'Open Sans', sans-serif; margin-top: 109px; }
 .logos img { max-height: 100px; padding: 15px; -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: .4s; }
 
 .logos img:hover { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+
+.modal-content { background: transparent; color: white; border: none; }

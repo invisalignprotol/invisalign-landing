@@ -34,14 +34,14 @@
 
   <!-- Add your site or application content here -->
 
-  <div class="w-100 fixed-top bg-white shadow">
+  <div id="navbarNavDropdown" class="w-100 fixed-top bg-white shadow">
     <div class="container top-nav py-2">
       <div class="row align-items-center">
         <div class="col-md-6">
           <img class="p-2" src="images/logo-horizontal.png" alt="">
     </div>
           <div class="col-md-6 text-right">
-            <a href="#" class="btn btn-lg btn-outline-primary">Call Us (555) 5555-555</a>
+            <a id="cta-nav" href="#" class="btn btn-lg btn-outline-primary">Call Us (555) 5555-555</a>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
                       <option>5</option>
                     </select>
                         </div>
-                        <button type="button" name="button" class="btn btn-danger w-100">Schedule Now</button>
+                        <button id="cta-top" type="button" name="button" class="btn btn-danger w-100">Schedule Now</button>
                 </form>
               </div>
             </div>
@@ -266,7 +266,7 @@
                           <option>5</option>
                         </select>
                       </div>
-                      <button type="button" name="button" class="btn btn-danger w-100">Schedule Now</button>
+                      <button id="cta-bottom" type="button" name="button" class="btn btn-danger w-100">Schedule Now</button>
               </form>
             </div>
           </div>
@@ -282,16 +282,62 @@
                 </div>
               </div>
             </div>
-
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Find Out More About Our Services</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body px-0">
+                    <div class="container-fluid px-0">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/m1.jpg" class="img-fluid mb-2" alt="">
+                          <h3>Dr. Hye Park, DMD</h3>
+                          <p>Dr. Hye Park is a cosmetic and general dentist practicing at Northern Virginia. She has superior attention to detail and a very driven focus when she attends to patients and their needs. </p>
+                          <a href="#" target="_blank" rel="noopener" class="btn btn-primary">Find out more</a>
+                        </div>
+                        <div class="col-md-6">
+                          <img src="images/m2.jpg" class="img-fluid mb-2" alt="">
+                          <h3>More about Invisalign</h3>
+                          <p>Dr. Hye Park is a cosmetic and general dentist practicing at Northern Virginia. She has superior attention to detail and a very driven focus when she attends to patients and their needs. </p>
+                          <a href="#" target="_blank" rel="noopener" class="btn btn-primary">Find out more</a>
+                        </div>
+                      </div>
+                      <p class="text-center mt-4"><a href="" class="btn btn-danger">Boot An Appointment</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <script src="scripts/jquery.js?ver=1.12.4"></script>
             <script src="scripts/jquery-migrate.min.js?ver=1.4.1"></script>
             <script>
               window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
             </script>
             <script src="scripts/bootstrap.bundle.min.js"></script>
-            <script src="scripts/jquery.sticky-kit.min.js"></script>
-            <script src="scripts/main.js"></script>
-
+            <script>
+              jQuery(document).ready(function($) {
+                $(window).on("load", function() {
+                  $("html").bind("mouseleave", function() {
+                    $('#exampleModal').modal('show')
+                    $("html").unbind("mouseleave");
+                  });
+                  var ctaTopDistance = $("#cta-top").offset().top - $('#navbarNavDropdown').height();
+                  $(window).on('scroll', function() {
+                    var scrollPos = $(window).scrollTop();
+                    if (scrollPos > ctaTopDistance) {
+                      $("#cta-nav").addClass('btn-danger');
+                    } else {
+                      $("#cta-nav").removeClass('btn-danger');
+                    }
+                  });
+                });
+              });
+            </script>
             <script>
               var map;
 
