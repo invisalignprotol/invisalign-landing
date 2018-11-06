@@ -4,6 +4,8 @@
 
 body { font-family: 'Open Sans', sans-serif; margin-top: 109px; }
 
+.carousel-caption { color: black; }
+
 .form-control, .btn { border-radius: 0; }
 
 #map { height: 200px; }

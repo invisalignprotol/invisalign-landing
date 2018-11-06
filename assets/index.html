@@ -33,11 +33,11 @@
   <div id="navbarNavDropdown" class="w-100 fixed-top bg-white shadow">
     <div class="container top-nav py-2">
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <img class="p-2" src="images/logo-horizontal.png" alt="">
     </div>
-          <div class="col-md-6 text-right">
-            <a id="cta-nav" href="#" class="btn btn-lg btn-outline-primary">Call Us (555) 5555-555</a>
+          <div class="col-md-4 text-right">
+            <a id="cta-nav" href="#" class="btn btn-outline-primary d-block mx-4">Call Us (555) 5555-555</a>
           </div>
         </div>
       </div>
@@ -222,10 +222,10 @@
               </div>
               <p class="score-desc">Based on <span><strong>20</strong></span> reviews</p>
             </div>
-            <blockquote class="blockquote">
-              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
+
+            <div class="container">
+            </div>
+
             <p class="text-center"><button class="btn btn-outline-primary">Show More Reviews</button></p>
           </div>
 
@@ -264,14 +264,15 @@
 
           <div class="container top-nav py-2">
             <div class="row align-items-center">
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <img class="p-2" src="images/logo-horizontal.png" alt="">
-    </div>
-                <div class="col-md-6 text-right">
-                  <a href="#" class="btn btn-lg btn-outline-primary">Call Us (555) 5555-555</a>
+          </div>
+                <div class="col-md-4 text-right">
+                  <a id="cta-nav" href="#" class="btn btn-outline-primary d-block mx-4">Call Us (555) 5555-555</a>
                 </div>
               </div>
             </div>
+
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -312,6 +313,9 @@
             <script>
               jQuery(document).ready(function($) {
                 $(window).on("load", function() {
+                  $('.carousel').carousel({
+                    interval: 2000
+                  })
                   $("html").bind("mouseleave", function() {
                     $('#exampleModal').modal('show')
                     $("html").unbind("mouseleave");
